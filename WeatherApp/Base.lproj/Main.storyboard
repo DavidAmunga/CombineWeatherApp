@@ -22,17 +22,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="koi-r2-20l">
+                                <rect key="frame" x="20" y="334" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="5m3-OF-wSt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7l4-g5-PwH"/>
+                            <constraint firstItem="koi-r2-20l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="290" id="GEy-Xg-nuc"/>
+                            <constraint firstItem="koi-r2-20l" firstAttribute="trailing" secondItem="5m3-OF-wSt" secondAttribute="trailing" id="IUd-63-pi4"/>
                             <constraint firstItem="5m3-OF-wSt" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="LGq-L3-Qgk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5m3-OF-wSt" secondAttribute="bottom" constant="440" id="NYf-CC-Br7"/>
                             <constraint firstItem="5m3-OF-wSt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="332" id="omi-of-gns"/>
+                            <constraint firstItem="koi-r2-20l" firstAttribute="leading" secondItem="5m3-OF-wSt" secondAttribute="leading" id="xSe-N6-qe0"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cityTextField" destination="koi-r2-20l" id="pQf-pY-1Xl"/>
                         <outlet property="tempLabel" destination="5m3-OF-wSt" id="VE9-aH-N85"/>
                     </connections>
                 </viewController>

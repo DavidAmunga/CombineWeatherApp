@@ -10,7 +10,11 @@ import Foundation
 
 struct Constants{
     struct URLs{
-        static let weather = "http://api.openweathermap.org/data/2.5/weather?q=Houston&appId=3a777a8458b770ef071b32657fa48af5&units=imperial"
+        
+        static func weather(city:String)->String{
+            return "http://api.openweathermap.org/data/2.5/weather?q=\(city)&appId=3a777a8458b770ef071b32657fa48af5&units=imperial"
+        }
+       
         
     }
 }
