@@ -18,6 +18,7 @@ class Webservice{
             .map { $0.data }
             .decode(type: WeatherResponse.self, decoder: JSONDecoder())
             .map({$0.main})
+            .receive(on: RunLoop.main)
             .eraseToAnyPublisher()
     }
 }
